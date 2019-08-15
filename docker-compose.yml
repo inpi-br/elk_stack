@@ -25,8 +25,8 @@ services:
     cap_add:
       - ALL
     volumes:
-      - .\elasticsearch\config\elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
-      - .\elasticsearch\data:/usr/share/elasticsearch/data
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+      - ./elasticsearch/data:/usr/share/elasticsearch/data
     networks:
       - elastic
     ports:
@@ -54,7 +54,7 @@ services:
     cap_add:
       - ALL
     volumes:
-      - .\kibana\config:/usr/share/kibana/config
+      - ./kibana/config:/usr/share/kibana/config
     networks:
       - elastic
     ports:
@@ -75,9 +75,9 @@ services:
     cap_add:
       - ALL
     volumes:
-      - .\logstash\config\logstash.yml:/usr/share/logstash/config/logstash.yml:ro
-      - .\logstash\pipeline\logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
-      - .\monitored_folder\:/usr/share/logs
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/pipeline/logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
+      - ./monitored_folder/:/usr/share/logs
     networks:
       - elastic
     ports:
