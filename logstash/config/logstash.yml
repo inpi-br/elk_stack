@@ -6,7 +6,7 @@ http.host: "logstash"
 
 ## X-Pack security credentials
 #
-xpack.monitoring.enabled: true
+xpack.monitoring.enabled: false
 xpack.monitoring.elasticsearch.hosts: [ "http://elasticsearch:9200" ]
 xpack.monitoring.elasticsearch.username: elastic
 xpack.monitoring.elasticsearch.password: changeme

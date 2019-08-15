@@ -14,5 +14,5 @@ interpreter.enableInVisualize: true
 
 ## X-Pack security credentials
 #
-xpack.monitoring.enabled: true
-xpack.monitoring.ui.container.elasticsearch.enabled: true
+xpack.monitoring.enabled: false
+xpack.monitoring.ui.container.elasticsearch.enabled: false
